@@ -11,7 +11,7 @@ pdftk *.pdf cat output combined.pdf
 I made this batch files
 
 #./cbr2pdf.sh:
-	#!/bin/bash
+```	#!/bin/bash
 	#set -xev
 	ORIGINAL_FOLDER=`pwd` 
 	JPEGS=`mktemp -d`
@@ -19,9 +19,9 @@ I made this batch files
 	cd "$JPEGS"
 	ls -1 ./*jpg | xargs -L1 -I {} img2pdf {} -o {}.pdf
 	pdftk *.pdf cat output combined.pdf
-	cp "$JPEGS/combined.pdf" "$ORIGINAL_FOLDER/$1.pdf"
+	cp "$JPEGS/combined.pdf" "$ORIGINAL_FOLDER/$1.pdf"```
 
-#cat cbz2pdf.sh
+```#cat cbz2pdf.sh
 	#!/bin/bash
 	#set -xev
 	ORIGINAL_FOLDER=`pwd` 
@@ -30,4 +30,4 @@ I made this batch files
 	cd "$JPEGS"
 	ls -1 ./*jpg | xargs -L1 -I {} img2pdf {} -o {}.pdf
 	pdftk *.pdf cat output combined.pdf
-	cp "$JPEGS/combined.pdf" "$ORIGINAL_FOLDER/$1.pdf"
+	cp "$JPEGS/combined.pdf" "$ORIGINAL_FOLDER/$1.pdf"```
