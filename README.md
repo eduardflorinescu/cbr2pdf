@@ -31,7 +31,8 @@ cat cbz2pdf.sh
 	cd "$JPEGS"
 	ls -1 ./*jpg | xargs -L1 -I {} img2pdf {} -o {}.pdf
 	pdftk *.pdf cat output combined.pdf
-	cp "$JPEGS/combined.pdf" "$ORIGINAL_FOLDER/$1.pdf"```
+	cp "$JPEGS/combined.pdf" "$ORIGINAL_FOLDER/$1.pdf"
+	```
 	
 
 To convert all cbr and cbz in folder and subfolder:
