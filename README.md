@@ -11,7 +11,8 @@ pdftk *.pdf cat output combined.pdf
 I made this batch files
 
 #./cbr2pdf.sh:
-```	#!/bin/bash
+```
+	#!/bin/bash
 	#set -xev
 	ORIGINAL_FOLDER=`pwd` 
 	JPEGS=`mktemp -d`
@@ -23,7 +24,8 @@ I made this batch files
 ```
 
 cat cbz2pdf.sh
-```#	#!/bin/bash
+```
+	#!/bin/bash
 	#set -xev
 	ORIGINAL_FOLDER=`pwd` 
 	JPEGS=`mktemp -d`
@@ -37,9 +39,11 @@ cat cbz2pdf.sh
 
 To convert all cbr and cbz in folder and subfolder:
 
-```	tree -fai . | grep -P "cbr$" | xargs -L1 -I{} ./cbr2pdf.sh {}
+```	
+	tree -fai . | grep -P "cbr$" | xargs -L1 -I{} ./cbr2pdf.sh {}
 ```
 and
 
-```	tree -fai . | grep -P "cbz$" | xargs -L1 -I{} ./cbz2pdf.sh {}
+```	
+	tree -fai . | grep -P "cbz$" | xargs -L1 -I{} ./cbz2pdf.sh {}
 ```
