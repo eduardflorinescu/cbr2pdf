@@ -1,6 +1,11 @@
 #why ?
 Unfortunately convert changes the image, which is very important to CBR and CBZ, so to have no loss of quality, practically using the original jpg inside the CBR(CBZ) you need to use img2pdf, I use this commands:
 
+First need to install this:
+```
+sudo apt install img2pdf p7zip-full
+```
+
 1) This to make a pdf file out of every jpg image without loss of either resolution or quality:
 ```
 ls -1 ./*jpg | xargs -L1 -I {} img2pdf {} -o {}.pdf
