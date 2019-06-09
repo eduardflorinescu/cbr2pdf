@@ -3,7 +3,7 @@ Unfortunately convert changes the image, which is very important to CBR and CBZ,
 
 First need to install this:
 ```
-sudo apt install img2pdf p7zip-full
+sudo apt install pdftk img2pdf p7zip-full 
 ```
 
 1) This to make a pdf file out of every jpg image without loss of either resolution or quality:
